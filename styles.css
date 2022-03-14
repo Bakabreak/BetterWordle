@@ -1,7 +1,74 @@
-html {
-    min-height: 100%;
+.light-theme {
+    --primary-color: black;
+    --secondary-color: #313131;
+    --background-color: white;
 }
 
-.centered {
+.dark-theme {
+    --primary-color: white;
+    --secondary-color: gray;
+    --background-color: black;
+}
 
+:root {
+    --header-height: 60px;
+    --button-size: 60px;
+    --button-spacing: 5px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.header {
+    height: calc(var(--header-height) - 2px);
+    max-height: calc(var(--header-height) - 2px);
+    border-bottom: 2px solid var(--primary-color);
+    overflow: hidden;
+}
+
+.header .title {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: inherit;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switch input {
+    width: 0;
+    height: 0;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    padding: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: var(--button-spacing);
+}
+
+.row {
+    display: flex;
+    grid-gap: var(--button-spacing);
+}
+
+.button {
+    width: var(--button-size);
+    height: var(--button-size);
+    border: 2px solid var(--primary-color);
 }
