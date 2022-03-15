@@ -4,64 +4,65 @@
     <meta charset="UTF-8">
     <title>Better Wordle</title>
     <link rel="stylesheet" href="/styles.css">
+    <link href="/KarnakPro-Black.ttf" rel="stylesheet" type="text/css"/>
+    <script src="/scripts.js"></script>
+    <script src="/all_words.js"></script>
 </head>
 <body class="light-theme">
     <div class="header">
         <span class="title">Better Wordle</span>
-        <div class="controls">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="switch-content"></span>
-            </label>
-        </div>
+        <div id="dark_theme_toggle" class="switch" onclick="darkTheme = !darkTheme; updateDarkTheme();"></div>
     </div>
     <div class="content">
         <div class="board">
             <div class="grid">
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row1" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row2" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row3" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row4" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row5" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
-                <div class="row">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                <div id="row6" class="row">
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
+                    <div class="button"><p></p></div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="results-panel" class="results-panel">
+
     </div>
 </body>
 </html>
