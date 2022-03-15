@@ -1,8 +1,7 @@
 let darkTheme = localStorage.getItem('dark-theme') === 'true';
-let correctWord = allWords[Math.floor(Math.random()*allWords.length)].toUpperCase();
+let correctWord;
 let row = 1;
 let guess = '';
-console.log(Date.now() % 1000 * 60 * 60 * 24 % allWords.length);
 
 function onKeyPress(key) {
     let charnum = key.keyCode;
@@ -63,6 +62,10 @@ function completeGame(win){
 document.addEventListener('keydown', onKeyPress);
 
 window.onload = () => {
+    // Pick a word
+    correctWord = allWords[Math.floor(Math.random()*allWords.length)].toUpperCase();
+    // correctWord = allWords[Date.now() % 1000 * 60 * 60 * 24 % allWords.length].toUpperCase();
+
     // Restore dark theme settings
     updateDarkTheme();
 }
