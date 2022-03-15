@@ -1,7 +1,8 @@
 let darkTheme = localStorage.getItem('dark-theme') === 'true';
-let correctWord = 'press'.toUpperCase();
+let correctWord = allWords[Math.floor(Math.random()*allWords.length)].toUpperCase();
 let row = 1;
 let guess = '';
+console.log(Date.now() % 1000 * 60 * 60 * 24 % allWords.length);
 
 function onKeyPress(key) {
     let charnum = key.keyCode;
