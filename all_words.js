@@ -2547,7 +2547,6 @@ let allWords =
     'cocky',
     'coyly',
     'balmy',
-    'slosh',
     'brawl',
     'aphid',
     'faked',
