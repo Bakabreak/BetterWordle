@@ -37,7 +37,7 @@ function onKeyPress(key) {
 
     if (guess.length < 5) {
         if ((charnum > 96 && charnum < 123) || (charnum > 64 && charnum < 91)) {
-            guess = guess + key.key;
+            guess = guess + key.key.toLowerCase();
             let word = document.getElementById('row' + row).children[guess.length - 1];
             word.firstChild.innerHTML = key.key;
         }
