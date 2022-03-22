@@ -23,8 +23,10 @@ function onKeyPress(key) {
 
     if (guess.length === 5 && key.key === 'Enter' && allWords.includes(guess)) {
         validateWord();
-        if (guess === correctWord)
+        if (guess === correctWord) {
             completeGame(true);
+            return
+        }
         row += 1;
         guess = '';
         if (row === 7) {
