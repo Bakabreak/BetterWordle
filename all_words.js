@@ -3544,7 +3544,6 @@ let allWords =
     'nutty',
     'axial',
     'aleck',
-    'natal',
     'clomp',
     'gored',
     'siree',
